@@ -56,13 +56,14 @@ body {
 }
 
 .details-logo-portada {
+    display: none;
     margin: 20px;
     margin-top: auto;
 }
 
 /*Ocultar el logo en pantallas grandes*/
 .icon-logo {
-    display: none;
+    display: block;
 }
 .icon-portada {
     height: 80px;
