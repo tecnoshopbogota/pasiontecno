@@ -92,7 +92,7 @@ body {
     }
 
     /*Mostrar el logo en pantallas pequeñas*/
-        .logo-icon-container img {
+    .logo-icon {
         display: block;
         height: 80px;
         width: 80px;
