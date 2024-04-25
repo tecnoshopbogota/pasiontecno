@@ -4,82 +4,69 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+.header {
+    background-color: rgb(255, 197, 8);
+    height: 80px;
+    display: flex;
 }
 
-header {
-    background: #50b3a2;
-    color: white;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+.company-details {
+    display: flex;
+    align-items: center;
+    margin: auto; /* Centra el elemento verticalmente */
+    margin-left: 10px; /* Anula el centrado horizontal */
 }
 
-header a {
-    color: #ffffff;
+.logo-icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Centra el elemento verticalmente */
+    margin-left: 10px; /* Anula el centrado horizontal */
+}
+
+/*Ocultar el logo en pantallas grandes*/
+.logo-icon-container img {
+    display: none;
+}
+.logo-icon {
+    height: 80px;
+    width: 80px;
+}
+
+.portadaname {
+    height: 80px;
+    width: 360px;
+}
+
+.info a {
+    color: rgb(234, 248, 32);
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
 }
 
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
+.desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
 }
 
-header #branding {
-    float: left;
+.desktop-menu ul li {
+    margin-left: 20px;
 }
 
-header #branding h1 {
-    margin: 0;
+.desktop-menu ul li a {
+    color: rgb(47, 61, 85);
+    text-decoration: none;
 }
 
-header nav {
-    float: right;
-    margin-top: 10px;
+.actions {
+    display: flex;
 }
 
-header .highlight, header .current a {
-    color: #e8491d;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #cccccc;
-    font-weight: bold;
-}
-
-#showcase {
-    min-height: 400px;
-    background: url('../img/showcase.jpg') no-repeat 0 -400px;
-    text-align: center;
-    color: white;
-}
-
-#showcase h1 {
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
-}
-
-#showcase p {
-    font-size: 20px;
-}
-
-footer {
-    padding: 20px;
-    margin-top: 20px;
-    color: white;
-    background-color: #e8491d;
-    text-align: center;
+.actions .action {
+    margin-left: 20px;
 }
 
 /* Tus Media Queries van al final */
