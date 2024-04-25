@@ -33,7 +33,7 @@ body {
     width: 360px;
 }
 
-/* Tus Media Queries van al final */
+/* Estilos para móviles */
 
 @media screen and (max-width: 600px) {
 body {
@@ -69,3 +69,9 @@ body {
     width: 360px;
 }
 }
+
+/* Estilos para tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Tus estilos van aquí */
+}
+
