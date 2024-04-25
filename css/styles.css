@@ -94,8 +94,8 @@ body {
     /*Mostrar el logo en pantallas pequeñas*/
         .logo-icon-container img {
         display: block;
-        height: auto;
-        width: auto;
+        height: 80px;
+        width: 80px;
     }
 
 
