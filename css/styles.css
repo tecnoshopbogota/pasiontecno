@@ -91,10 +91,13 @@ body {
         width: auto; /* Ajusta el ancho para adaptarse a la pantalla más pequeña */
     }
 
-    /*Mostrar el logo en pantallas grandes*/
+    /*Mostrar el logo en pantallas pequeñas*/
         .logo-icon-container img {
         display: block;
+        height: auto;
+        width: auto;
     }
+
 
     .desktop-menu ul {
         flex-direction: column; /* Cambia la dirección de flex a columna */
