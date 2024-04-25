@@ -56,7 +56,6 @@ body {
 }
 
 .details-logo-portada {
-    display: none;
     margin: 20px;
     margin-top: auto;
 }
@@ -66,6 +65,7 @@ body {
     display: block;
 }
 .icon-portada {
+    display: none;
     height: 80px;
     width: 360px;
 }
