@@ -76,33 +76,34 @@ body {
         font-size: 18px;
     }
 
-    .container {
-        width: 100%;
-    }
-
-    header {
+    .header {
         padding: 20px 0;
+        height: auto; /* Ajusta la altura para adaptarse al contenido */
     }
 
-    header h1, header nav {
-        float: none;
-        text-align: center;
+    .company-details, .logo-icon-container {
+        margin: 10px; /* Ajusta los márgenes para adaptarse a la pantalla más pequeña */
     }
 
-    header li {
-        display: block;
-        padding: 10px;
+    .logo-icon, .portadaname {
+        height: auto; /* Ajusta la altura para adaptarse a la pantalla más pequeña */
+        width: auto; /* Ajusta el ancho para adaptarse a la pantalla más pequeña */
     }
 
-    #showcase h1 {
-        font-size: 30px;
+    .desktop-menu ul {
+        flex-direction: column; /* Cambia la dirección de flex a columna */
     }
 
-    #showcase p {
-        font-size: 16px;
+    .desktop-menu ul li {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        padding: 10px 0; /* Añade padding arriba y abajo para separar los elementos de la lista */
     }
 
-    footer {
-        padding: 10px;
+    .actions {
+        flex-direction: column; /* Cambia la dirección de flex a columna */
+    }
+
+    .actions .action {
+        margin-left: 0; /* Elimina el margen izquierdo */
     }
 }
