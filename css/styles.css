@@ -86,8 +86,14 @@ body {
     }
 
     .logo-icon, .portadaname {
+        display: none; /* Oculta el logo y el nombre de la empresa en pantallas pequeñas */
         height: auto; /* Ajusta la altura para adaptarse a la pantalla más pequeña */
         width: auto; /* Ajusta el ancho para adaptarse a la pantalla más pequeña */
+    }
+
+    /*Mostrar el logo en pantallas grandes*/
+        .logo-icon-container img {
+        display: block;
     }
 
     .desktop-menu ul {
