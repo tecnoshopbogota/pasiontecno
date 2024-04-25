@@ -17,9 +17,14 @@
         margin-right: 10px;
     }
 
-    .logo-text {
-        /* Estilos para el texto después del logo */
     }
 
-    /* Otros estilos para dispositivos móviles */
-}
+    /* Estilos para el contenedor del logo y el texto */
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-icon {
+        margin-right: 10px;
+    }
