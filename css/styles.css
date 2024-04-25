@@ -13,106 +13,59 @@ body {
     display: flex;
 }
 
-.company-details {
+.header-collapsed {
+    background-color: rgb(255, 197, 8);
+    height: 80px;
     display: flex;
-    align-items: center;
-    margin: auto; /* Centra el elemento verticalmente */
-    margin-left: 10px; /* Anula el centrado horizontal */
 }
 
-.logo-icon-container {
-    display: flex;
-    align-items: center;
-    margin-right: auto; /* Centra el elemento verticalmente */
-    margin-left: 10px; /* Anula el centrado horizontal */
+.details-logo-portada {
+    margin: 20px;
+    margin-top: auto;
 }
 
 /*Ocultar el logo en pantallas grandes*/
-.logo-icon-container img {
+.icon-logo {
     display: none;
 }
-.logo-icon {
-    height: 80px;
-    width: 80px;
-}
-
-.portadaname {
+.icon-portada {
     height: 80px;
     width: 360px;
-}
-
-.info a {
-    color: rgb(234, 248, 32);
-    text-decoration: none;
-}
-
-.desktop-menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.desktop-menu ul li {
-    margin-left: 20px;
-}
-
-.desktop-menu ul li a {
-    color: rgb(47, 61, 85);
-    text-decoration: none;
-}
-
-.actions {
-    display: flex;
-}
-
-.actions .action {
-    margin-left: 20px;
 }
 
 /* Tus Media Queries van al final */
 
 @media screen and (max-width: 600px) {
     body {
-        font-size: 18px;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
     }
-
+    
     .header {
-        padding: 20px 0;
-        height: auto; /* Ajusta la altura para adaptarse al contenido */
-    }
-
-    .company-details, .logo-icon-container {
-        margin: 10px; /* Ajusta los márgenes para adaptarse a la pantalla más pequeña */
-    }
-
-    .logo-icon, .portadaname {
-        display: none; /* Oculta el logo y el nombre de la empresa en pantallas pequeñas */
-        height: auto; /* Ajusta la altura para adaptarse a la pantalla más pequeña */
-        width: auto; /* Ajusta el ancho para adaptarse a la pantalla más pequeña */
-    }
-
-    /*Mostrar el logo en pantallas pequeñas*/
-    .logo-icon {
-        display: block;
+        background-color: rgb(255, 197, 8);
         height: 80px;
-        width: 80px;
+        display: flex;
     }
-
-
-    .desktop-menu ul {
-        flex-direction: column; /* Cambia la dirección de flex a columna */
+    
+    .header-collapsed {
+        background-color: rgb(255, 197, 8);
+        height: 80px;
+        display: flex;
     }
-
-    .desktop-menu ul li {
-        margin-left: 0; /* Elimina el margen izquierdo */
-        padding: 10px 0; /* Añade padding arriba y abajo para separar los elementos de la lista */
+    
+    .details-logo-portada {
+        margin: 20px;
+        margin-top: auto;
     }
-
-    .actions {
-        flex-direction: column; /* Cambia la dirección de flex a columna */
+    
+    /*Ocultar el logo en pantallas grandes*/
+    .icon-logo {
+        display: none;
     }
-
-    .actions .action {
-        margin-left: 0; /* Elimina el margen izquierdo */
+    .icon-portada {
+        height: 80px;
+        width: 360px;
     }
 }
