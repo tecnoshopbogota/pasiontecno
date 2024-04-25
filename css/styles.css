@@ -1,8 +1,25 @@
 @media (max-width: 768px) {
     /* Estilos para dispositivos móviles */
+
+    /* Ajusta el tamaño del logo para dispositivos móviles */
     .logo-icon {
-        height: 50px; /* Ajusta el tamaño del logo para dispositivos móviles */
+        height: 50px;
         width: auto;
     }
+
+    /* Estilos para el contenedor del logo y el texto */
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-icon {
+        margin-right: 10px;
+    }
+
+    .logo-text {
+        /* Estilos para el texto después del logo */
+    }
+
     /* Otros estilos para dispositivos móviles */
 }
