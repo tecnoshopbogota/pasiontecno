@@ -60,14 +60,16 @@ body {
     margin-top: auto;
 }
 
-/*Ocultar el logo en pantallas grandes*/
+/*Mostrar en pantallas menores a 600*/
 .icon-logo {
     display: block;
+    height: 80px;
+    width: 80px;
 }
+
+/*Ocultar en pantallas menores a 600*/
 .icon-portada {
     display: none;
-    height: 80px;
-    width: 360px;
 }
 }
 
