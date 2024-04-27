@@ -1,0 +1,119 @@
+/* Tu CSS existente va aquí */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: rgb(55, 123, 179);
+    height: 70px;
+    display: flex;
+}
+
+.header-collapsed {
+    background-color: rgb(55, 123, 179);
+    height: 70px;
+    display: flex;
+}
+
+.details-logo-portada {
+    margin: 20px;
+    margin-top: auto;
+}
+
+/*Ocultar el logo en pantallas grandes*/
+.icon-logo {
+    display: none;
+}
+.icon-portada {
+    height: 70px;
+    width: 360px;
+}
+
+.header-menu {
+    margin: auto;
+    margin-top: auto;
+}
+
+.menu-list {
+/*aumentar el tamaño de la fuente*/
+    font-size: 18px;
+    list-style:inside;
+    padding: 0;
+    margin: auto;
+}
+.menu-link {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: #000000;
+    margin-top: auto;
+}
+
+
+/* Estilos para móviles */
+
+@media screen and (max-width: 600px) {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: rgb(55, 123, 179);
+    height: 80px;
+    display: flex;
+}
+
+.header-collapsed {
+    background-color: rgb(55, 123, 179)    ;
+    height: 80px;
+    display: flex;
+}
+
+.details-logo-portada {
+    margin: 20px;
+    margin-top: auto;
+}
+
+/*Mostrar en pantallas menores a 600*/
+.icon-logo {
+    display: block;
+    height: 80px;
+    width: 80px;
+}
+
+/*Ocultar en pantallas mayores a 600*/
+.icon-portada {
+    display: none;
+}
+
+.header-menu {
+    margin: auto;
+    margin-top: auto;
+}
+
+.menu-list {
+/*aumentar el tamaño de la fuente*/
+    font-size: 20px;
+    list-style:inside;
+    padding: 0;
+    margin: 0;
+}
+.menu-link {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: #000000;
+    margin-top: auto;
+}
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Tus estilos van aquí */
+}
+
