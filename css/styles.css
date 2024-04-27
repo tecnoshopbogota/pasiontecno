@@ -52,6 +52,11 @@ body {
     margin-top: auto;
 }
 
+.button-image {
+    height: 150px;
+    width: 150px;
+    margin-top: auto;
+}
 
 /* Estilos para móviles */
 
