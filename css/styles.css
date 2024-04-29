@@ -48,14 +48,13 @@ body {
 .menu-link {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     margin-top: auto;
 }
 
 .button-image {
     height: 150px;
     width: 150px;
-    margin-top: auto;
 }
 
 /* Estilos para móviles */
@@ -112,13 +111,13 @@ body {
 .menu-link {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     margin-top: auto;
 }
 
 .button-image {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 }
 
