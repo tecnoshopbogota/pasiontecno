@@ -57,6 +57,13 @@ body {
     width: 150px;
 }
 
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+}
+
 /* Estilos para móviles */
 
 @media screen and (max-width: 600px) {
@@ -118,6 +125,13 @@ body {
 .button-image {
     height: 100px;
     width: 100px;
+}
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
 }
 }
 
