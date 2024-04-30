@@ -247,9 +247,8 @@ footer {
 
 .footer-section {
     margin-bottom: 20px;
-    border-bottom: 1px solid #ffffff; /* Esto agrega una línea negra de 1px al final del elemento */
+    border-bottom: 1px solid #000; /* Esto agrega una línea negra de 1px al final del elemento */
 }
-
 .footer-section h3, .footer-section h4{
     font-size: 25px;
     color: #ffffff;
