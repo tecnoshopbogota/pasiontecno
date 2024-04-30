@@ -237,6 +237,36 @@ body {
     text-decoration: none;
 }
 
+footer {
+    color: #ffffff;
+    background-color: #377BB3;
+    padding: 1px;
+    text-align: center;
+}
+
+.footer-section {
+    display: inline-block;
+    width: 80%; /* Ajusta esto al ancho que desees */
+    border-bottom: 1px solid #ffffff;
+}
+
+.footer-section h3, .footer-section h4{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.footer-section p, .footer-section img {
+    margin-top: 10px;
+}
+
+.content-image {
+    /*encerrar imagenes en un circulo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
 
 }
 
