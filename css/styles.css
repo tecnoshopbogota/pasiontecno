@@ -21,7 +21,6 @@ body {
 }
 
 .details-logo-portada {
-    margin: 20px;
     margin-top: auto;
 }
 
@@ -32,20 +31,37 @@ body {
 .icon-portada {
     height: 70px;
     width: 360px;
+    margin-left: 20px;
+}
+
+.menu-icon {
+/*Ajustar para que queden los iconos en fila*/
+    height: 70px;
+    width: 70px;
+    list-style: none;
+    display: flex;
+}
+
+.menu-contenedor {
+    height: 70px;
+    width: 70px;
+}
+
+.menu-item {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 30px;
+    margin-top: auto;
+    text-align: center;
 }
 
 .header-menu {
-    margin: auto;
-    margin-top: auto;
-}
-
-.menu-list {
-/*aumentar el tamaño de la fuente*/
-    font-size: 18px;
-    list-style:inside;
-    padding: 0;
-    margin: auto;
-    background-color: transparent;
+    /*dejar elementos en la parte superior*/
+    margin-top: 0px;
+    display: flex;
+    gap: 0px;
+    margin-left: 20px;
 }
 .menu-link {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -55,6 +71,13 @@ body {
     background-color: transparent;
 }
 
+.home-text {
+    font-size: 20px;
+    color: #000000;
+    margin-top: auto;
+    margin-left: 20px;
+}
+
 .button-image {
     height: 100px;
     width: 100px;
@@ -62,10 +85,11 @@ body {
 
 .ak-grid-items-category {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    row-gap: 50px;
     text-align: center;
-    margin-left: auto;
+    margin: 60px;
     align-items: center;
     list-style: none;
     padding: 10px;
@@ -87,8 +111,36 @@ body {
 }
 
 .text-color {
-    color: #377bb3;
+    color: #377BB3;
     text-decoration: none;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #377BB3;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.footer-section p, .footer-section img {
+    margin-top: 10px;
+}
+
+.content-image {
+    /*encerrar imagenes en un circulo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 @media screen and (max-width: 600px) {
