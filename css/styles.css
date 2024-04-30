@@ -209,7 +209,7 @@ body {
 .ak-grid-items-category {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
     text-align: center;
     margin-left: auto;
     align-items: center;
@@ -245,9 +245,8 @@ footer {
 }
 
 .footer-section {
-    display: inline-block;
-    width: 80%; /* Ajusta esto al ancho que desees */
-    border-bottom: 1px solid #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff; /* Esto agrega una línea negra de 1px al final del elemento */
 }
 
 .footer-section h3, .footer-section h4{
