@@ -71,6 +71,13 @@ body {
     background-color: transparent;
 }
 
+.home {
+    /*ajustar para que el texto quede justificado*/
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .home-text {
     font-size: 20px;
     color: #000000;
