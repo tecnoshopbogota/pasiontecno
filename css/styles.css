@@ -24,7 +24,6 @@ body {
     margin-top: auto;
 }
 
-/*Ocultar el logo en pantallas grandes*/
 .icon-logo {
     display: none;
 }
@@ -35,7 +34,6 @@ body {
 }
 
 .menu-icon {
-/*Ajustar para que queden los iconos en fila*/
     height: 70px;
     width: 70px;
     list-style: none;
@@ -57,7 +55,6 @@ body {
 }
 
 .header-menu {
-    /*dejar elementos en la parte superior*/
     margin-top: 5px;
     display: flex;
     gap: 10px;
@@ -130,7 +127,7 @@ footer {
 
 .footer-section {
     display: inline-block;
-    width: 50%; /* Ajusta esto al ancho que desees */
+    width: 50%; 
     border-bottom: 1px solid #ffffff;
 }
 
@@ -144,13 +141,13 @@ footer {
 }
 
 .content-image {
-    /*encerrar imagenes en un circulo*/
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
+/*CSS para pantallas menores a 600px------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 600px) {
 body {
     font-family: Arial, sans-serif;
