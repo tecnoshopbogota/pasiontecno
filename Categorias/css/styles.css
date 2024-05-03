@@ -354,13 +354,13 @@ footer {
     border-radius: 10px;
     background-color: #ffffff;
     padding: 10px;
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 300px;
 }
 
 .k-product-contenedor img {
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 150px;
 }
 
 .product-code {
