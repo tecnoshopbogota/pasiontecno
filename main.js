@@ -25,6 +25,7 @@ let precios = document.querySelectorAll('.product-price');
 
 precios.forEach(precio => {
     let valor = Number(precio.textContent.replace(/\D/g, '')); // Elimina todos los caracteres no numéricos
-    let valorFormateado = valor.toLocaleString('es-CO', { style: 'currency', currency: 'COP' });
+    let valorRedondeado = Math.round(valor); // Redondear el valor al número entero más cercano
+    let valorFormateado = valorRedondeado.toLocaleString('es-CO', { style: 'currency', currency: 'COP' });
     precio.textContent = valorFormateado;
 });
