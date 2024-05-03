@@ -394,8 +394,8 @@ footer {
 .k-product-contenedor.expanded img {    
     width: 100%;
     height: auto;
-    max-width: 280px; /* Limita el ancho máximo a 500px */
-    max-height: 280px; /* Limita la altura máxima a 500px */
+    max-width: auto; /* Limita el ancho máximo a 500px */
+    max-height: auto; /* Limita la altura máxima a 500px */
 }
 
 .k-product-contenedor.expanded {
@@ -405,8 +405,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 60vh;
-    height: 70vh;
+    width: auto;
+    height: auto;
     margin: auto;
 }
 /*Fin ajustes para el mosaico de articulos-----------------------------------------------------------------------------------------------------------------------------------------*/
