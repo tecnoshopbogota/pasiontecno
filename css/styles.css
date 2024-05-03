@@ -12,6 +12,10 @@ body {
     background-color: rgb(55, 123, 179);
     height: 70px;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header-collapsed {
@@ -72,6 +76,7 @@ body {
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 70px;
 }
 
 .home-text {
@@ -96,6 +101,7 @@ body {
     align-items: center;
     list-style: none;
     padding: 10px;
+    margin-top: 70px;
 }
 
 .k-product-contenedor {
