@@ -350,13 +350,17 @@ footer {
 
 /*Inicio ajustes para el mosaico de articulos---------------------------------------------------------------------------------------------------------------------------------------*/
 .k-product-contenedor {
-    width: 200px;
-    height: 350px;
+    border: 0.1px solid #377BB3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: auto;
+    height: auto;
 }
 
 .k-product-contenedor img {
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
 }
 
 .product-code {
@@ -395,7 +399,8 @@ footer {
 }
 
 .k-product-contenedor.expanded {
-    position: fixed;
+    /*Que se superponga sobre el resto de la página*/
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
