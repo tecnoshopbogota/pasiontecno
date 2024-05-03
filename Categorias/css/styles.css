@@ -315,6 +315,7 @@ body {
 .ak-grid-items-category {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: auto-fill;
     gap: 40px;
     text-align: center;
     margin-left: auto;
