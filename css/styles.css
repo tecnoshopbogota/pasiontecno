@@ -113,14 +113,13 @@ body {
     border-radius: 10px;
     background-color: #ffffff;
     padding: 10px;
-    width: 100%; /* Cambia a 100% para que se ajuste al ancho de la pantalla */
-    height: auto; /* Cambia a auto para que se ajuste al contenido */
-    text-decoration: none;
+    width: 200px;
+    height: 350px;
 }
 
 .k-product-contenedor img {
-    width: 100%; /* Cambia a 100% para que se ajuste al ancho del contenedor */
-    height: auto; /* Cambia a auto para mantener la proporción de la imagen */
+    width: 200px;
+    height: 200px;
 }
 
 .product-code {
