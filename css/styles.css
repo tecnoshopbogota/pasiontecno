@@ -88,20 +88,88 @@ body {
 
 .ak-grid-items-category {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    row-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    row-gap: 20px;
     text-align: center;
-    margin: 60px;
     align-items: center;
     list-style: none;
     padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
+.product-description, .product-code, .product-price {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+/*Inicio ajustes para el mosaico de articulos---------------------------------------------------------------------------------------------------------------------------------------*/
 .k-product-contenedor {
-    border-radius: 50%;
+    border: 0.1px solid #377BB3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%; /* Cambia a 100% para que se ajuste al ancho de la pantalla */
+    height: auto; /* Cambia a auto para que se ajuste al contenido */
+    text-decoration: none;
 }
 
+.k-product-contenedor img {
+    width: 100%; /* Cambia a 100% para que se ajuste al ancho del contenedor */
+    height: auto; /* Cambia a auto para mantener la proporción de la imagen */
+}
+
+.product-code {
+    text-align: right;
+    font-size: 14px;
+    color: #377BB3;
+    margin-top: 0px;
+}
+
+.product-description {
+    text-align: left;
+    font-size: 20px;
+    color: #377BB3;
+    margin-top: 10px;
+}
+
+.product-price {
+    /*Ubicar el texto en la parte baja a la derecha*/
+    font-size: 20px;
+    color: #377BB3;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.product-code,
+.product-description,
+.product-price {
+    word-wrap: break-word; /* Ajusta las palabras largas para que se ajusten al contenedor */
+}
+
+.k-product-contenedor.expanded img {    
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Limita el ancho máximo a 500px */
+    max-height: 500px; /* Limita la altura máxima a 500px */
+}
+
+.k-product-contenedor.expanded {
+    /*Que se superponga sobre el resto de la página*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 60vh;
+    height: 70vh;
+    margin: auto;
+}
+/*Fin ajustes para el mosaico de articulos-----------------------------------------------------------------------------------------------------------------------------------------*/
 .filters-content-desktop {
     margin-left: auto;
 }
@@ -217,8 +285,8 @@ body {
 
 .home {
     display: flex;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-image {
@@ -228,7 +296,7 @@ body {
 
 .ak-grid-items-category {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 40px;
     text-align: center;
     margin-left: auto;
@@ -246,10 +314,6 @@ body {
     font-size: 20px;
     padding: 10px 0 10px 0;
     margin-right: 10px;
-    text-decoration: none;
-}
-
-.k-product-contenedor {
     text-decoration: none;
 }
 
@@ -285,6 +349,63 @@ footer {
     gap: 30px;
 }
 
+/*Inicio ajustes para el mosaico de articulos---------------------------------------------------------------------------------------------------------------------------------------*/
+.k-product-contenedor {
+    width: 200px;
+    height: 350px;
+}
+
+.k-product-contenedor img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-code {
+    text-align: right;
+    font-size: 14px;
+    color: #377BB3;
+    margin-top: 0px;
+}
+
+.product-description {
+    text-align: left;
+    font-size: 20px;
+    color: #377BB3;
+    margin-top: 10px;
+}
+
+.product-price {
+    /*Ubicar el texto en la parte baja a la derecha*/
+    font-size: 20px;
+    color: #377BB3;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.product-code,
+.product-description,
+.product-price {
+    word-wrap: break-word; /* Ajusta las palabras largas para que se ajusten al contenedor */
+}
+
+.k-product-contenedor.expanded img {    
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Limita el ancho máximo a 500px */
+    max-height: 500px; /* Limita la altura máxima a 500px */
+}
+
+.k-product-contenedor.expanded {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 60vh;
+    height: 70vh;
+    margin: auto;
+}
+/*Fin ajustes para el mosaico de articulos-----------------------------------------------------------------------------------------------------------------------------------------*/
 
 }
 
