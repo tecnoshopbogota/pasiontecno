@@ -411,6 +411,7 @@ footer {
 }
 
 .k-product-contenedor.expanded {
+    position: absolute;
     top: 70px;
     border: 0.1px solid #377BB3;
     border-radius: 10px;
