@@ -2,7 +2,7 @@ let products = document.querySelectorAll('.product');
 let scrollPosition = 0; // Variable para guardar la posición de desplazamiento
 
 products.forEach(product => {
-    product.addEventListener('click', function(event) {
+    product.addEventListener('click', function() {
         // Guardar la posición de desplazamiento antes de expandir el producto
         scrollPosition = window.scrollY;
 
@@ -17,11 +17,7 @@ products.forEach(product => {
         this.classList.toggle('expanded');
 
         // Restaurar la posición de desplazamiento después de expandir o contraer el producto
-        if (this.classList.contains('expanded')) {
-            // Si se está expandiendo el producto, evitar que la página se mueva
-            event.preventDefault();
-            window.scrollTo(0, scrollPosition);
-        }
+        window.scrollTo(0, scrollPosition);
     });
 });
 
