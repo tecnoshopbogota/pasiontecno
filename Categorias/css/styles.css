@@ -88,9 +88,9 @@ body {
 
 .ak-grid-items-category {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    row-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    row-gap: 20px;
     text-align: center;
     align-items: center;
     list-style: none;
@@ -137,28 +137,37 @@ body {
 }
 
 .product-price {
-    font-size: 14px;
+    /*Ubicar el texto en la parte baja a la derecha*/
+    font-size: 20px;
     color: #377BB3;
-    margin-top: 50px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.product-code,
+.product-description,
+.product-price {
+    word-wrap: break-word; /* Ajusta las palabras largas para que se ajusten al contenedor */
 }
 
 .k-product-contenedor.expanded img {    
-    /*ajustar imagen automaticamente segun el tamaño del contenedor*/
-    width: 100%; /*ajustar ancho automaticamente*/
-    height: auto; /*ajustar alto automaticamente*/
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Limita el ancho máximo a 500px */
+    max-height: 500px; /* Limita la altura máxima a 500px */
 }
 
 .k-product-contenedor.expanded {
-    /*ajustar apra que quede en la parte superior*/
-    position: fixed;    
-    top: 10vh;
+    /*Que se superponga sobre el resto de la página*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
     left: 0;
-    /*ajustar ancho automaticamente*/
-    width: 70vb;
-    height: 74vh;
-    /*ampliar el tamaño de la imagen*/
+    right: 0;
+    width: 60vh;
+    height: 70vh;
+    margin: auto;
 }
-
 /*Fin ajustes para el mosaico de articulos-----------------------------------------------------------------------------------------------------------------------------------------*/
 .filters-content-desktop {
     margin-left: auto;
@@ -373,28 +382,36 @@ footer {
 }
 
 .product-price {
-    font-size: 14px;
+    /*Ubicar el texto en la parte baja a la derecha*/
+    font-size: 20px;
     color: #377BB3;
-    margin-top: 50px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.product-code,
+.product-description,
+.product-price {
+    word-wrap: break-word; /* Ajusta las palabras largas para que se ajusten al contenedor */
 }
 
 .k-product-contenedor.expanded img {    
-    /*ajustar imagen automaticamente segun el tamaño del contenedor*/
-    width: 100%; /*ajustar ancho automaticamente*/
-    height: auto; /*ajustar alto automaticamente*/
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Limita el ancho máximo a 500px */
+    max-height: 500px; /* Limita la altura máxima a 500px */
 }
 
 .k-product-contenedor.expanded {
-    /*ajustar apra que quede en la parte superior*/
-    position: fixed;    
-    top: 10vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     left: 0;
-    /*ajustar ancho automaticamente*/
-    width: 50vb;
-    height: 54vh;
-    /*ampliar el tamaño de la imagen*/
+    right: 0;
+    width: 60vh;
+    height: 70vh;
+    margin: auto;
 }
-
 /*Fin ajustes para el mosaico de articulos-----------------------------------------------------------------------------------------------------------------------------------------*/
 
 }
