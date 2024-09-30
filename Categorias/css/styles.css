@@ -182,6 +182,13 @@ body {
     flex: 1 0 auto;
 }
 
+.expandable-content {
+    display: none;
+}
+
+.product.expanded .expandable-content {
+    display: block;
+}
 /*Fin ajustes para el mosaico de articulos-----------------------------------------------------------------------------------------------------------------------------------------*/
 .filters-content-desktop {
     margin-left: auto;
@@ -425,6 +432,14 @@ footer {
 .k-product-contenedor.expanded img {
     width: 300px;
     height: 300px;
+}
+
+.expandable-content {
+    display: none;
+}
+
+.product.expanded .expandable-content {
+    display: block;
 }
 /*Fin ajustes para el mosaico de articulos-----------------------------------------------------------------------------------------------------------------------------------------*/
 
