@@ -1,31 +1,51 @@
+// Selecciona todos los elementos con la clase 'product'
 let products = document.querySelectorAll('.product');
 let scrollPosition = 0; // Variable para guardar la posición de desplazamiento
 
-products.forEach(product => {
-    product.addEventListener('click', function() {
-        // Guardar la posición de desplazamiento antes de expandir el producto
-        scrollPosition = window.scrollY;
+// Verifica que 'products' no esté vacío
+if (products.length > 0) {
+    products.forEach(product => {
+        // Agrega un evento de clic a cada producto
+        product.addEventListener('click', function(event) {
+            // Si ya hay un producto expandido, contraerlo y restaurar la posición de desplazamiento
+            let expandedProduct = document.querySelector('.product.expanded');
+            if (expandedProduct && expandedProduct !== this) {
+                expandedProduct.classList.remove('expanded');
+                window.scrollTo(0, scrollPosition);
+                console.log('Posición existente restaurada:', scrollPosition);
+            }
 
-        // Primero, elimina la clase 'expanded' de todos los productos
-        products.forEach(p => {
-            if (p !== this) {
-                p.classList.remove('expanded');
+            // Si el producto en el que se hizo clic no está expandido, expandirlo y guardar la posición de desplazamiento
+            if (!this.classList.contains('expanded')) {
+                scrollPosition = window.scrollY;
+                this.classList.add('expanded');
+                console.log('Posición de desplazamiento guardada:', scrollPosition);
+                this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                // Si el producto ya está expandido, simplemente contraerlo y restaurar la posición de desplazamiento
+                this.classList.remove('expanded');
+                setTimeout(() => {
+                    window.scrollTo(0, scrollPosition);
+                    console.log('Posición nueva restaurada:', scrollPosition);
+                }, 0);
             }
         });
-
-        // Luego, si el producto en el que se hizo clic ya tiene la clase 'expanded', la elimina; si no la tiene, la agrega
-        this.classList.toggle('expanded');
-
-        // Restaurar la posición de desplazamiento después de expandir o contraer el producto
-        window.scrollTo(0, scrollPosition);
     });
-});
 
-let precios = document.querySelectorAll('.product-price');
+    // Selecciona todos los elementos con la clase 'product-price'
+    let precios = document.querySelectorAll('.product-price');
 
-precios.forEach(precio => {
-    let valor = Number(precio.textContent.replace(/\D/g, '')); // Elimina todos los caracteres no numéricos
-    let valorRedondeado = Math.round(valor); // Redondear el valor al número entero más cercano
-    let valorFormateado = valorRedondeado.toLocaleString('es-CO', { style: 'currency', currency: 'COP' });
-    precio.textContent = valorFormateado;
-});
+    // Verifica que 'precios' no esté vacío
+    if (precios.length > 0) {
+        precios.forEach(precio => {
+            let valor = Number(precio.textContent.replace(/\D/g, '')); // Elimina todos los caracteres no numéricos
+            let valorRedondeado = Math.round(valor); // Redondear el valor al número entero más cercano
+            let valorFormateado = valorRedondeado.toLocaleString('es-CO', { style: 'currency', currency: 'COP' });
+            precio.textContent = valorFormateado;
+        });
+    } else {
+        console.error('No se encontraron elementos con la clase .product-price');
+    }
+} else {
+    console.error('No se encontraron elementos con la clase .product');
+}
