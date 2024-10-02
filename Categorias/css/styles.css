@@ -458,8 +458,8 @@ footer {
     .k-product-contenedor.expanded img {    
         width: 100%; /* Ancho fijo para todas las imágenes */
         height: auto; /* Mantener la proporción de la imagen */
-        max-width: 500px; /* Limita el ancho máximo a 500px */
-        max-height: 500px; /* Limita la altura máxima a 500px */
+        max-width: 400px; /* Limita el ancho máximo a 500px */
+        max-height: 400px; /* Limita la altura máxima a 500px */
         display: block; /* Asegura que la imagen se comporte como un bloque */
         margin: 0 auto; /* Centrar la imagen horizontalmente */
     }
