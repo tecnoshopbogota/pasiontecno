@@ -273,6 +273,36 @@ footer {
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+    
+    .header {
+        background-color: rgb(55, 123, 179);
+        height: 80px;
+        display: flex;
+    }
+    
+    .header-collapsed {
+        background-color: rgb(55, 123, 179)    ;
+        height: 80px;
+        display: flex;
+    }
+    
+    .details-logo-portada {
+        margin: 10px;
+        margin-top: auto;
+    }
+    
+    /*Mostrar en pantallas menores a 600*/
+    .icon-logo {
+        display: block;
+        height: 80px;
+        width: 80px;
+    }
     .k-product-contenedor {
         width: 100%; /* Ancho completo en pantallas pequeñas */
         height: auto; /* Altura automática en pantallas pequeñas */
