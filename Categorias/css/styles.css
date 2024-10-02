@@ -417,13 +417,14 @@ footer {
     border-radius: 10px;
     background-color: #ffffff;
     padding: 10px;
-    width: 150px;
-    height: 300px;
+    width: 200px;
+    height: 350px;
+    position: relative; /* Asegura que los elementos hijos posicionados absolutamente se alineen correctamente */
 }
 
 .k-product-contenedor img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .product-code {
@@ -454,24 +455,70 @@ footer {
     word-wrap: break-word; /* Ajusta las palabras largas para que se ajusten al contenedor */
 }
 
-.k-product-contenedor.expanded {
-    position: absolute;
-    top: 70px;
-    border: 0.1px solid #377BB3;
-    border-radius: 10px;
-    background-color: #ffffff;
-    padding: 10px;
-    width: 300px;
-    height: 500px;
+.k-product-contenedor.expanded img {    
+    width: 100%; /* Ancho fijo para todas las imágenes */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-width: 500px; /* Limita el ancho máximo a 500px */
+    max-height: 500px; /* Limita la altura máxima a 500px */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
 }
 
-.k-product-contenedor.expanded img {
-    width: 300px;
-    height: 300px;
+.k-product-contenedor.expanded {
+    /* Que se superponga sobre el resto de la página */
+    position: absolute;
+    top: 70px; /* Margen superior para el encabezado */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw; /* Ancho completo de la ventana */
+    height: calc(100vh - 70px); /* Altura de la ventana menos el margen superior */
+    margin: 0 auto; /* Centrar horizontalmente */
+    overflow: auto; /* Permitir el desplazamiento si el contenido es más grande que el contenedor */
+    background: white; /* Fondo blanco para el contenedor expandido */
+    z-index: 1000; /* Asegurarse de que el contenedor esté por encima de otros elementos */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    align-items: flex-start; /* Alinear al inicio verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 20px; /* Añadir padding para el contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para mejor visibilidad */
+}
+
+.k-product-contenedor.expanded .content-wrapper {
+    display: flex;
+    flex-direction: row; /* Organizar en fila */
+    align-items: flex-start; /* Alinear al inicio verticalmente */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.k-product-contenedor.expanded .text-content {
+    display: flex;
+    flex-direction: column; /* Organizar el texto en columnas */
+    max-width: 600px; /* Limitar el ancho máximo del texto */
+}
+
+.k-grid-items-category {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1 0 auto;
+}
+
+.image-wrapper {
+    position: relative; /* Asegura que los elementos hijos posicionados absolutamente se alineen correctamente */
 }
 
 .expandable-content {
     display: none;
+    position: absolute;
+    bottom: 10px; /* Ajusta según sea necesario */
+    right: 10px; /* Ajusta según sea necesario */
+    text-align: center; /* Centrar el contenido dentro del contenedor */
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejor visibilidad */
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .product.expanded .expandable-content {
