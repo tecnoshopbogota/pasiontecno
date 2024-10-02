@@ -1,5 +1,3 @@
-/* Tu CSS existente va aquí */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -31,6 +29,7 @@ body {
 .icon-logo {
     display: none;
 }
+
 .icon-portada {
     height: 70px;
     width: 360px;
@@ -64,8 +63,9 @@ body {
     gap: 10px;
     margin-left: 20px;
 }
+
 .menu-link {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     color: #ffffff;
     margin-top: auto;
@@ -105,12 +105,34 @@ body {
     margin-left: 20px;
 }
 
-.product-description, .product-code, .product-price {
+.product-description,
+.product-code,
+.product-price {
     font-size: 14px;
     color: #333;
     margin-top: 10px;
+    word-wrap: break-word; /* Ajusta las palabras largas para que se ajusten al contenedor */
 }
 
+.product-code {
+    text-align: right;
+    color: #377BB3;
+    margin-top: 0px;
+}
+
+.product-description {
+    text-align: left;
+    font-size: 20px;
+    color: #377BB3;
+}
+
+.product-price {
+    /*Ubicar el texto en la parte baja a la derecha*/
+    font-size: 20px;
+    color: #377BB3;
+    margin-top: 30px;
+    text-align: right;
+}
 
 /*Inicio ajustes para el mosaico de articulos---------------------------------------------------------------------------------------------------------------------------------------*/
 .k-product-contenedor {
@@ -128,35 +150,7 @@ body {
     height: 200px;
 }
 
-.product-code {
-    text-align: right;
-    font-size: 14px;
-    color: #377BB3;
-    margin-top: 0px;
-}
-
-.product-description {
-    text-align: left;
-    font-size: 20px;
-    color: #377BB3;
-    margin-top: 10px;
-}
-
-.product-price {
-    /*Ubicar el texto en la parte baja a la derecha*/
-    font-size: 20px;
-    color: #377BB3;
-    margin-top: 30px;
-    text-align: right;
-}
-
-.product-code,
-.product-description,
-.product-price {
-    word-wrap: break-word; /* Ajusta las palabras largas para que se ajusten al contenedor */
-}
-
-.k-product-contenedor.expanded img {    
+.k-product-contenedor.expanded img {
     width: 100%; /* Ancho fijo para todas las imágenes */
     height: auto; /* Mantener la proporción de la imagen */
     max-width: 500px; /* Limita el ancho máximo a 500px */
@@ -226,6 +220,7 @@ body {
     display: block;
 }
 /*Fin ajustes para el mosaico de articulos-----------------------------------------------------------------------------------------------------------------------------------------*/
+
 .filters-content-desktop {
     margin-left: auto;
 }
@@ -251,11 +246,11 @@ footer {
 
 .footer-section {
     display: inline-block;
-    width: 50%; 
+    width: 50%;
     border-bottom: 1px solid #ffffff;
 }
 
-.footer-section h3, .footer-section h4{
+.footer-section h3, .footer-section h4 {
     font-size: 25px;
     color: #ffffff;
 }
@@ -274,4 +269,32 @@ footer {
 .product-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .k-product-contenedor {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        height: auto; /* Altura automática en pantallas pequeñas */
+    }
+
+    .k-product-contenedor img {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    .k-product-contenedor.expanded {
+        top: 0; /* Sin margen superior en pantallas pequeñas */
+        height: 100vh; /* Altura completa de la ventana en pantallas pequeñas */
+        padding: 10px; /* Reducir padding en pantallas pequeñas */
+    }
+
+    .k-product-contenedor.expanded .content-wrapper {
+        flex-direction: column; /* Organizar en columna en pantallas pequeñas */
+        align-items: center; /* Centrar horizontalmente en pantallas pequeñas */
+    }
+
+    .k-product-contenedor.expanded .text-content {
+        max-width: 100%; /* Ancho completo del texto en pantallas pequeñas */
+    }
 }
