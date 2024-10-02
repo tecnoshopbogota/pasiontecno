@@ -417,8 +417,8 @@ footer {
         border-radius: 10px;
         background-color: #ffffff;
         padding: 10px;
-        width: 200px;
-        height: 350px;
+        width: 150px;
+        height: 300px;
         position: relative; /* Asegura que los elementos hijos posicionados absolutamente se alineen correctamente */
     }
     
